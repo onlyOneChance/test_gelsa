@@ -1,0 +1,53 @@
+webLSA:an integrated local similarity analysis & network of high-troughput visualization biological series data
+
+**Introduction**
+**Biological Time Series Data: Significance, Features, and Current Challenges**
+The rapid generation of time series data in the field of biology has made it possible to unveil the complex dynamics of biological processes.
+Biological time series data capture the dynamic evolution of biological systems over time, providing insights into the temporal patterns of biological events such as gene expression and cellular responses. 
+The significance of these data lies in their ability to reveal the intricacies of biological processes and expose patterns that may be hidden in static snapshots.
+Despite the undeniable importance of these data, their analysis presents a series of challenges. 
+Previous revalent analysis tools have limitations in capturing subtle differences in temporal relationships and adequately visualizing the complex patterns inherent in these datasets. 
+Furthermore, the analysis of massive and complex biological time series data requires innovative solutions to extract meaningful insights.
+It is in recognition of these challenges that webLSA emerges as a forefront solution, overcoming existing limitations in the analysis of biological time series data.
+**webLSA: The Next Generation Biological Time Series Data Analysis Tool**
+webLSA, short for "web Local Similarity Analysis," represents a significant stride in the field of computational biology. 
+As an integrated platform, webLSA aims to achieve high-throughput local similarity analysis of biological sequence data and the corresponding visualization of biological data relationships by utilizing networks - graphistry. 
+By combining the robust capabilities of Local Similarity Analysis (LSA) with an intuitive network visualization approach, webLSA provides researchers with a comprehensive toolkit to explore functional relationships within biological time series datasets.
+**Advantages of webLSA: Changing the Paradigm of Biological Sequence Data Analysis**
+In comparison to traditional computational software, webLSA establishes itself as a unique solution by introducing novel features and capabilities. 
+By enhancing the power and average levels of LSA, webLSA enables more nuanced comparisons with existing tools. 
+Unlike its predecessors, webLSA leverages the advantages of web services, offering a more accessible and integrated software ecosystem. 
+The program's CPU parallelization design accelerates the analysis of corresponding data, addressing the need for swift computations.
+As a pioneering representative of web service-based tools in the field of LSA analysis, webLSA not only makes the analysis of biological time series data more accessible but also integrates various functionalities into a unified platform, streamlining the analytical process. 
+The high-speed performance of webLSA ensures tasks that once took weeks can now be completed within a matter of hours.
+In conclusion, webLSA stands at the forefront of biological sequence data analysis, overcoming the limitations of previous tools. 
+Through its innovative web service-based approach, it introduces a new paradigm of accessibility, integration, and accelerated computation.
+
+methods
+2.1 service framework    pigture1.1
+
+2.2 Algorithm & Acceleration
+pigture1.2 并行程序分析 多条数据同时 可以提速30
+and cpu or gpu并行，在排序算法之中可以提速300
+
+2.3 Network visualization
+graphistry pigture1.3
+
+2.4benchmark
+ 时间 空间对比
+tes 与 old elsa
+
+Results
+3.1 webserver界面以及使用功能区
+pigture1.4    带箭头就好
+
+数据管理
+计算过程
+网络显示
+
+3.3 case study 
+数据集
+
+
+
+参考文献

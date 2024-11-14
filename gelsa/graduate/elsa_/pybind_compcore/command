@@ -1,0 +1,28 @@
+apt-get update && apt-get install -y wget sudo python3.11 python3.11-dev python3-pip
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
+sudo apt-get update
+sudo apt-get -y install cuda-toolkit-12-3
+
+
+rm -rf ./compcore.so &&
+cd pybind_compcore &&
+/usr/local/cuda-12.3/bin/nvcc -Xcompiler -fPIC \
+-ccbin /usr/bin/gcc \
+-std=c++14 \
+-c ./compcore.cu \
+-o ./libcompcore.o && 
+g++ -std=c++14 -fPIC -shared \
+./*.cpp \
+./libcompcore.o \
+-I /usr/include/python3.11 \
+-L /usr/lib/python3.11 \
+-lpython3.11 \
+-I../pybind11/include \
+-I/usr/local/cuda-12.3/include \
+-L/usr/local/cuda-12.3/lib64 \
+-lcudart \
+-O3 -o ../compcore.so &&
+cd .. &&
+python m.py 

@@ -1,0 +1,9 @@
+include MANIFEST.in
+include LICENSE.txt
+include VERSION.txt
+include setup.py
+include lsa/__init__.py
+include lsa/compcore.so
+include lsa/lsalib.py
+include lsa/lsa_compute.py
+include lsa/m.py
